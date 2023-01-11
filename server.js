@@ -1,6 +1,5 @@
 const express = require("express");
 const session = require("express-session");
-// const passport = require('./lib/passport')
 const socketio = require("socket.io");
 const { User } = require("./models");
 
@@ -46,7 +45,6 @@ io.on('connection', (socket)=>{
   socket.on('chat message', async(msg)=>{
     // example message {"id":2,"message":"apakah barang ada ?"}
     let parse = JSON.parse(msg)
-    // console.log(parse.id)
     
     const idExist = await User.findOne({
       where:{
@@ -54,7 +52,6 @@ io.on('connection', (socket)=>{
       },
       raw: true,
     });
-    // console.log(idExist)
     
     if (idExist) {
       io.emit(parse.id, msg) // add this line from implement broadcast
