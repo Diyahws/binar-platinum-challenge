@@ -49,7 +49,6 @@ module.exports = {
             message: "invalid token",
           });
         }
-        
     
         req.user = decoded;
         console.log(decoded);
@@ -62,6 +61,5 @@ module.exports = {
           message: error.message,
         });
       }
-    
   }
 }
