@@ -27,8 +27,8 @@ const upload = multer({
     return callback(new Error("only .png, .jpg, .jpeg format type allowed"));
   },
   limits: {
-    // 8mb
-    fileSize: 8388608, //bytes
+    // 5mb
+    fileSize: 5242880, //bytes
   },
 });
 
@@ -80,8 +80,8 @@ module.exports = {
         return callback(new Error("only png/jpg/jpeg format allowed"));
       },
       limits: {
-        // 8mb
-        fileSize: 8388608, //bytes
+        // 5mb
+        fileSize: 5242880, //bytes
       },
     });
 
