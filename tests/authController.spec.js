@@ -64,7 +64,6 @@ describe("auth controller with Login function", () => {
     const res = mockResponse();
 
     await authController.loginUser(req, res);
-    // console.log(res)
     expect(res.status).toBeCalledWith(200);
     expect(res.json).toBeCalledWith({
       status: 200,
