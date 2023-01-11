@@ -19,10 +19,6 @@ module.exports = {
           pass: "pubhjdtqmvppwtke"
         }
       })
-      
-      // for (let i = 0; i < emailUser.length; i++)  {
-      //   console.log(emailUser[i].dataValues);
-      // }
   
       for (let i = 0; i < emailUser.length; i++) {
         var template = handlebars.compile(html);
