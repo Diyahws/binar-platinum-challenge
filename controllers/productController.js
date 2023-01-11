@@ -1,20 +1,4 @@
 const { Product } = require("../models");
-// const fs = require("fs");
-// const cloudinary = require("cloudinary").v2;
-
-// async function uploadCloudinary(filepath) {
-//   let result;
-//   try {
-//     result = await cloudinary.uploader.upload(filepath, {
-//       use_filename: true,
-//     });
-//     fs.unlinkSync(filepath);
-//     return result.url;
-//   } catch (error) {
-//     fs.unlinkSync(filepath);
-//     return null;
-//   }
-// }
 
 module.exports = {
   addProduct: async (req, res) => {
