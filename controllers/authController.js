@@ -2,8 +2,6 @@ const bcrypt = require("bcrypt");
 const { User } = require("../models");
 const jwt = require("jsonwebtoken");
 
-// const passport = require("passport");
-
 const secretKey = "secretkeyjwt";
 
 module.exports = {
@@ -36,18 +34,6 @@ module.exports = {
         });
       }
     }
-
-    // const checkUser = await User.findOne({
-    //   where: {
-    //     name: name,
-    //   },
-    // });
-    // if (checkUser != null) {
-    //   return res.status(500).json({
-    //     status: 500,
-    //     message: "name taken",
-    //   });
-    // }
 
     if (password.length < 5) {
       return res.status(500).json({
@@ -99,8 +85,7 @@ module.exports = {
 
     res.status(200).json({
       status: 200,
-      message: "success register",
-      // response: saveRegist,
+      message: "success register"
     });
   },
 
