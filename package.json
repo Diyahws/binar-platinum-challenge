@@ -1,0 +1,44 @@
+{
+  "name": "platinum-challenge-gold",
+  "version": "1.0.0",
+  "description": "Platinum challenge with Team",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --setupFiles dotenv/config",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/erandadava/platinum-challenge-gold.git"
+  },
+  "author": "dava eranda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/erandadava/platinum-challenge-gold/issues"
+  },
+  "homepage": "https://gitlab.com/erandadava/platinum-challenge-gold#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "cloudinary": "^1.32.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "jest": "^29.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "memorystore": "^1.6.7",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.8.0",
+    "sequelize": "^6.26.0",
+    "socket.io": "^4.5.4",
+    "swagger-ui-express": "^4.6.0"
+  },
+  "engines": {
+    "node": "18.12.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "dbchplatinum_1",
+    "password": "database1",
+    "database": "platinum_dev1",
+    "host": "db-platinum.cdnypr5aefim.ap-southeast-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "dbchplatinum_1",
+    "password": "database1",
+    "database": "platinum_test1",
+    "host": "db-platinum.cdnypr5aefim.ap-southeast-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "dbchplatinum_1",
+    "password": "database1",
+    "database": "platinum_prod1",
+    "host": "db-platinum.cdnypr5aefim.ap-southeast-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
