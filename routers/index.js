@@ -6,7 +6,6 @@ const emailController = require("../controllers/emailController");
 const uploadController = require("../controllers/uploadController");
 
 const { uploadSingleImage } = require("../helpers/multer");
-// const homeController = require('../controllers/homeController')
 
 //LOGIN REGISTER
 router.post("/register", auth.auth_register, authController.registerUser);
